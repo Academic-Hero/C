@@ -1,0 +1,30 @@
+// To Count Even And Odd Number In An Array
+
+#include <stdio.h>
+
+int main()
+{
+    int size, even = 0, odd = 0;
+
+    printf("Enter Size of Array: ");
+    scanf("%d", &size);
+
+    int arr[size];
+
+    for (int i = 0; i < size; i++)
+    {
+        printf("%d. Enter Elements: ", i + 1);
+        scanf("%d", &arr[i]);
+
+        if (arr[i] % 2 == 0)
+            even++;
+
+        else
+            odd++;
+    }
+
+    printf("Number of even number is: %d\n", even);
+    printf("Number of odd number is: %d\n", odd);
+
+    return 0;
+}
